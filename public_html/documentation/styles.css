@@ -1,0 +1,15 @@
+/*STYLEZZZZZZZZZ*/
+
+html, body, header, #intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("https://media1.popsugar-assets.com/files/thumbor/mO5MYGmyqQ72JS3WS-DAnOp3x70/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/11/04/979/n/43374309/8aa9d123dbb982b2_11361194135_1a96ddebbb_o/i/New-Mexico-Sandia-Mountains.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
