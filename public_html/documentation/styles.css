@@ -58,9 +58,30 @@ hr {
 
 #carousel-2 {
     color: white;
-    background-color: black;
+    background-color: #111;
 }
 
 #carousel-2 h2 {
-    padding-bottom: 400px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+
+.carousel-caption {
+    background: orange;
+    color: #111;
+    margin: 0 0 0 -15px;
+    position: static;
+    text-align: left;
+    text-shadow: none;
+    padding: 30px;
+}
+
+.img-wrapper {
+    margin: 0 -15px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
 }
