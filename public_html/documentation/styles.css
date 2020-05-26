@@ -3,7 +3,7 @@
 html, body, header, #intro {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: #343a40;
+    background-color: #111;
 }
 
 #intro {
@@ -39,6 +39,10 @@ hr {
     background: white;
 }
 
+.navbar, .page-footer {
+    background-color: #111;
+}
+
 .nav-link {
     text-transform: uppercase;
     font-size: 15px;
@@ -51,7 +55,7 @@ hr {
 
 .fa-github, .fa-linkedin {
     font-size: 2.5rem;
-    color: black;
+    color: white;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -70,18 +74,19 @@ hr {
 .carousel-caption {
     background: orange;
     color: #111;
+    font-size: 1.1em;
+    height: 400px;
     margin: 0 0 0 -15px;
+    padding: 30px;
     position: static;
     text-align: left;
-    text-shadow: none;
-    padding: 30px;
 }
 
-.img-wrapper {
-    margin: 0 -15px 0 0;
-    overflow: hidden;
-    position: relative;
+.img-wrapper img {
+    height: 400px;
+    position: static;
 }
 
-img {
+.carousel-inner {
+    transition: opacity 1s;
 }
