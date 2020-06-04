@@ -6,6 +6,8 @@ html, body, header, #intro {
     background-color: #111;
 }
 
+        /*Landing Page*/
+
 #intro {
     background: url("https://media1.popsugar-assets.com/files/thumbor/mO5MYGmyqQ72JS3WS-DAnOp3x70/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/11/04/979/n/43374309/8aa9d123dbb982b2_11361194135_1a96ddebbb_o/i/New-Mexico-Sandia-Mountains.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
@@ -30,13 +32,11 @@ html, body, header, #intro {
     border-radius: 5px;box-shadow: 0px 0px 10px 3px black;
 }
 
+        /*/Landing Page*/
+
 .bg-transparent-dark-outro {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;box-shadow: 0px 0px 10px 3px black;
-}
-
-hr {
-    background: white;
 }
 
 .navbar, .page-footer {
@@ -59,6 +59,10 @@ hr {
     padding-right: 10px;
     padding-left: 10px;
 }
+
+
+/*Carousel CSS*/
+
 
 #carousel-2 {
     color: white;
@@ -89,4 +93,20 @@ hr {
 
 .carousel-inner {
     transition: opacity 1s;
+}
+
+/*/Carousel CSS*/
+
+h3 {
+    color:orange;
+}
+
+@media screen and (min-width: 992px) {
+    .project-spacer {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+
 }
