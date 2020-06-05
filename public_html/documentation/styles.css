@@ -1,12 +1,20 @@
 /*STYLEZZZZZZZZZ*/
 
-html, body, header, #intro {
+html,
+body,
+header, #intro {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #111;
 }
 
-        /*Landing Page*/
+hr {
+    height: 1px;
+    background-color: white;
+    border: none;
+}
+
+/*Landing Page*/
 
 #intro {
     background: url("https://media1.popsugar-assets.com/files/thumbor/mO5MYGmyqQ72JS3WS-DAnOp3x70/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/11/04/979/n/43374309/8aa9d123dbb982b2_11361194135_1a96ddebbb_o/i/New-Mexico-Sandia-Mountains.jpg") no-repeat center fixed;
@@ -32,14 +40,15 @@ html, body, header, #intro {
     border-radius: 5px;box-shadow: 0px 0px 10px 3px black;
 }
 
-        /*/Landing Page*/
+/*/Landing Page*/
 
 .bg-transparent-dark-outro {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;box-shadow: 0px 0px 10px 3px black;
 }
 
-.navbar, .page-footer {
+.navbar,
+.page-footer {
     background-color: #111;
 }
 
@@ -64,41 +73,12 @@ html, body, header, #intro {
 /*Carousel CSS*/
 
 
-#carousel-2 {
-    color: white;
-    background-color: #111;
-}
 
-#carousel-2 h2 {
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 40px 0;
-}
-
-.carousel-caption {
-    background: orange;
-    color: #111;
-    font-size: 1.1em;
-    height: 400px;
-    margin: 0 0 0 -15px;
-    padding: 30px;
-    position: static;
-    text-align: left;
-}
-
-.img-wrapper img {
-    height: 400px;
-    position: static;
-}
-
-.carousel-inner {
-    transition: opacity 1s;
-}
 
 /*/Carousel CSS*/
 
 h3 {
-    color:orange;
+    color: orange;
 }
 
 @media screen and (min-width: 992px) {
@@ -107,6 +87,29 @@ h3 {
     }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 992px){
+@media screen and (max-width: 992px) {
+    h3 {
+        margin-top: 2rem;
+    }
+}
 
+@media screen and (max-width: 1199px) and (min-width: 992px){
+    #test {
+        width: 100%;
+    }
+}
+
+.round {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.jumbotron {
+    background-image: radial-gradient(white,#aaa7b8);
+}
+
+.white {
+    color: white;
 }

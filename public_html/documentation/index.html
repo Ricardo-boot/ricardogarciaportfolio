@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ricardo Garcia Portfolio</title>
 
+    <!--AnimateOnScroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/9acd39a97c.js" crossorigin="anonymous"></script>
 
@@ -15,14 +18,13 @@
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="styles.css" type="text/css">
-
 </head>
 <body>
 
 
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark">
             <div class="container">
 
 
@@ -38,18 +40,18 @@
                     <!-- Links -->
                     <ul class="navbar-nav ml-auto mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About <i class="fas fa-user"></i>
+                            <a class="nav-link" href="#about-me">About <i class="fas fa-user"></i>
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Certifications <i class="fas fa-award"></i></a>
+                            <a class="nav-link" href="#certifications">Certifications <i class="fas fa-award"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects <i class="fas fa-project-diagram"></i></a>
+                            <a class="nav-link" href="#projects">Projects <i class="fas fa-project-diagram"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me <i class="fas fa-phone"></i></a>
+                            <a class="nav-link" href="#contact-form-id">Contact Me <i class="fas fa-phone"></i></a>
                         </li>
 
                     </ul>
@@ -72,7 +74,7 @@
                         <h2 class="display-3 text-white mb-2 font-weight-bold">Web Development</h2>
 
                         <!--Divider-->
-                        <hr class="hr-light"/>
+                        <hr/>
 
                         <!--Description-->
                         <h4 class="text-white my-4">Frontend Development. Backend Development. <br> UI / UX Design.</h4>
@@ -85,140 +87,208 @@
 
 
         <!--Jumbotron-->
-    <div class="container">
-        <div class="row my-4">
-            <div class="jumbotron" style="background-image: url(images/sandia-mountains.jpg);">
-                <div class="text-white text-center py-5 px-4">
-                    <div>
-                        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Who am I?</strong></h2>
-                        <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
-                        </p>
-                    </div>
-                </div>
-            </div>
+<div class="container mt-5 mb-5 pb-5" id="about-me">
+    <div class="jumbotron text-center">
+
+        <!-- Card image -->
+        <div class="mb-4 pb-3">
+            <h4 class="card-title h1 pb-2"><strong>About Me</strong></h4>
+            <img src="images/web-developer.jpeg" style="width: 500px; height: 300px" class="round" alt="Ricardo Garcia">
         </div>
+
+        <p class="card-text lead">Welcome to my website, name is Ricardo Garcia. I am a junior web developer looking to start a career as a fullstack developer. My experience at the Deep Dive Coding bootcamp with CNM Ingenuity has given me the skills necessary to work with both front-end and back-end systems.
+        I have experience with everything from HTML to Docker, please take a look in my skills & certifications section to see my entire list of proficiencies. I am very excited to work as a web developer and hope to put my skills to use at your company.</p>
+        <p>Be sure to check out my LinkedIn & GitHub profiles at the bottom of the page!</p>
     </div>
+</div>
     <!--/Jumbotron-->
 
 
     <!--Carousel Wrapper-->
-    <div id="carousel-2" class="carousel slide  carousel-fade pt-3 pb-5" data-ride="carousel">
-        <!--Indicators-->
-        <div class="carousel-wrapper text-center">
-            <h2>Certifications & Skills</h2>
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-2" data-slide-to="1"></li>
-            <li data-target="#carousel-2" data-slide-to="2"></li>
-        </ol>
+    <div class="container" id="certifications">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center text-white">Certs & Skills</h1>
+                <hr>
+            </div>
         </div>
-        <!--/.Indicators-->
+    </div>
+    <div id="multi-item-example" class="carousel slide carousel-multi-item mb-5" data-ride="carousel">
+        <!--Controls-->
+        <div class="controls-top text-center">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left fa-2x white" style="color: white"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                    class="fas fa-chevron-right fa-2x" style="color: white"></i></a>
+        </div>
+        <!--/.Controls-->
+
+
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
 
-            <!--Slide 1-->
+            <!--First slide-->
             <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="img-wrapper">
-                            <img src="images/sample-image.jpg" alt="Sample Image">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="carousel-caption">
-                            <h2>Deep Dive Coding</h2>
-                            <p>test test test test</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!--Slide 2-->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="img-wrapper">
-                            <img src="images/sample-image.jpg" alt="Sample Image">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="carousel-caption">
-                            <h2>Deep Dive Coding</h2>
-                            <p>we live in a societywe live in a societywe live in a societywe live in a societywe live in a societywe live in a societywe live in a societywe live in a societywe live in a societywe live in a society</p>
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/html-5.png" alt="HTML 5">
+                        <div class="card-body">
+                            <h4 class="card-title">HTML5</h4>
+                            <p class="card-text lead">Extensive knowledge on elements, tags, and the HTML DOM.</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--Slide 3-->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="img-wrapper">
-                            <img src="images/sample-image.jpg" alt="Sample Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="carousel-caption">
-                            <h2>Deep Dive Coding</h2>
-                            <p>YOYOYOYOYOYOYOOOOOOOOOOOOO</p>
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/deepdive-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Deep Dive Coding</h4>
+                            <p class="card-text lead">Fullstack developer certificate from CNM Ingenuity.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/bootstrap-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Bootstrap</h4>
+                            <p class="card-text lead">Knowledge of the bootstrap grid system and bootstrap classes</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/javascript-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Javascript</h4>
+                            <p class="card-text lead">Deep understanding of functional programming.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/my-sql-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">MySQL</h4>
+                            <p class="card-text lead">Comprehension of relational database management systems</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/react-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">React</h4>
+                            <p class="card-text lead">Ability to build user interfaces with React.js</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/css-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">CSS</h4>
+                            <p class="card-text lead">Experience with manipulation of elements and the CSS box model</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/express-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Express</h4>
+                            <p class="card-text lead">Understanding of API's and how to route them.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" style="float:left">
+                    <div class="card mb-2">
+                        <img class="card-img-top"
+                             src="images/docker-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Docker</h4>
+                            <p class="card-text lead">A fundamental understanding of docker images and containers</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
         </div>
         <!--/.Slides-->
 
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
     </div>
+    <!--/.Carousel Wrapper-->
     <!--/.Carousel Wrapper-->
 
     <!--Projects-->
 
-    <div class="container">
+    <div class="container" id="projects">
         <div class="row">
-            <div class="col text-white text-center">
+            <div class="col text-white text-center" >
                 <h1>Projects that I've worked on</h1>
                 <hr>
             </div>
         </div>
-        <div class="row mb-4 mt-5">
-            <div class="col-lg-6">
-                <img class="mx-auto d-block" src="images/sample-image.jpg" alt="Sample Image">
+
+        <div class="row mb-5 mt-5 justify-content-between">
+            <div class="col-lg-5" >
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"  class="mx-auto d-block" src="images/bootstrap-challenge.png" alt="" style="height: 300px; width: 500px">
             </div>
-            <div class="col-lg-6 lead text-center text-white mt-4 text-wrapper">
-                <h3>Title</h3>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.</p>
-            </div>
-        </div>
-        <hr class="mb-5 project-spacer">
-        <div class="row mb-4">
-            <div class="col-lg-6 lead text-center text-white text-wrapper">
-                <h3>Title</h3>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.</p>
-            </div>
-            <div class="col-lg-6 order-first order-lg-0">
-                <img class="mx-auto d-block" src="images/sample-image.jpg" alt="Sample Image">
+            <div class="col-lg-6 lead text-center text-white text-wrapper" data-aos="fade-left">
+                <h3>Bootstrap</h3>
+                <p>A challenge I took part in during the Deep Dive Coding bootcamp at CNM Ingenuity. The bootstrap challenge involved being able to replicate a webpage given to me by the professors one my own in order to prove a working knowledge of bootstraps grid system and classes.</p>
             </div>
         </div>
         <hr class="mb-5 project-spacer">
-        <div class="row mb-5">
-            <div class="col-lg-6">
-                <img class="mx-auto d-block" src="images/sample-image.jpg" alt="Sample Image">
+
+        <div class="row mb-5 justify-content-between">
+            <div class="col-lg-6 lead text-center text-white text-wrapper" data-aos="fade-right">
+                <h3>React Challenge</h3>
+                <p>Another challenge I participated in while in the Deep Dive Coding bootcamp aimed at putting the knowledge I had been studying in action. The challenge involved using Javascript with React in order to display content on the DOM. This challenge gave me the experience and ability to work confidently with React as well as indispensible skills in order to fulfill my role as a fullstack developer</p>
             </div>
-            <div class="col-lg-6 lead text-center text-white text-wrapper">
-                <h3>Title</h3>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.</p>
+            <div class="col-lg-5 order-first order-lg-0">
+                <img data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos="flip-left"  class="mx-auto d-block" src="images/react-challenge.png" alt="React challenge image">
+            </div>
+        </div>
+        <hr class="mb-5 project-spacer">
+
+        <div class="row mb-5 justify-content-between">
+            <div class="col-lg-5">
+                <img data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="mx-auto d-block" src="images/historic-sites.png" alt="Historic sites image">
+            </div>
+            <div class="col-lg-6 lead text-center text-white" data-aos="fade-left">
+                <h3 class="animate__animated animate__bounce animate__repeat-3">Historical Sites Website</h3>
+                <p>Capstone project I participated in coding. A website aimed at both history enthusiasts or tourists who want to be able to locate historical sites in Albuquerque. Users have access to details of the historical sites, such as admission fees, their relevance to history, and the address of their location. Users are able to make profiles and create wish lists to add all the sites that they plan to visit.</p>
             </div>
         </div>
     </div>
@@ -227,9 +297,9 @@
 
     <!--Contact-->
     <div class="view py-5" id="outro">
-        <form class="bg-transparent-dark-outro text-align-left p-3 container contact-form" action="./apis/" id="contact" method="post" novalidate>
+        <form id="contact-form-id" class="bg-transparent-dark-outro text-align-left p-3 container contact-form" action="./apis/" id="contact" method="post" novalidate>
 
-            <p class="h1 mb-4 font-weight-bold text-center">Contact Me</p>
+            <p class="h1 mb-4 font-weight-bold text-center" >Contact Me</p>
             <hr>
             <div class="row">
                 <div class="col-md-6 text-left lead">
@@ -336,11 +406,13 @@
     <!-- Google reCAPTCHA -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
-
     <!--Validate Form script-->
     <script src="script.js"></script>
 
+    <!--Animation Scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>AOS.init();</script>
 
 </body>
 </html>
